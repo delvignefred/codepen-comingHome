@@ -37,7 +37,7 @@
   --system-margin-earth: 35px;
   --system-margin-venus: 15px;
   --system-margin-mercury: 38px;
-  --system-border-width: min(2px, .4vmin);
+  --system-border-width: min(2px, .4dvmin);
 }
 
 *,
@@ -69,8 +69,8 @@ body {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
 
     transform: skewX(-45deg);
     -webkit-transform: skewX(-45deg);
@@ -217,10 +217,10 @@ body {
     }
   }
     & #logo {
-      inline-size: 8vmin;
+      inline-size: 8dvmin;
       aspect-ratio: 1;
       position: absolute;
-      inset: auto 1.6vmin 1.6vmin auto;     
+      inset: auto 1.6dvmin 1.6dvmin auto;     
 
       opacity: 0.3;
       -webkit-filter: saturate(60%);
