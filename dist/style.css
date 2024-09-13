@@ -103,7 +103,7 @@ body {
       justify-content: center;
       align-items: center;
 
-      position: relative;
+      position: absolute;
       z-index: 99;
 
       aspect-ratio: 1;
@@ -116,7 +116,6 @@ body {
       border-color: var(--system-color-theme-planets);
 
       &::after {
-        position: inherit;
         content: "";
         aspect-ratio: 1;
         inline-size: 40%;
@@ -219,7 +218,7 @@ body {
     & #logo {
       inline-size: 8dvmin;
       aspect-ratio: 1;
-      position: absolute;
+      position: fixed;
       inset: auto 1.6dvmin 1.6dvmin auto;     
 
       opacity: 0.3;
